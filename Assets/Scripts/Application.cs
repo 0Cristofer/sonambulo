@@ -1,18 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Application : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public static Application App { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Awake()
+	{
+		DontDestroyOnLoad(this);
+		App = this;
+	}
+
+	public void ChangeSceneTo(SceneName sceneIndex, int suffix = 0)
+	{
+		string sceneName;
+	
+		switch (sceneIndex)
+		{
+			case SceneName.Start:
+				sceneName = "Start";
+				break;
+			case SceneName.Level:
+				sceneName = $"Level{suffix}";
+				break;
+			default:
+				throw new ArgumentOutOfRangeException(nameof(sceneIndex), sceneIndex, null);
+		}
+
+		SceneManager.LoadScene(sceneName);
+	}
+
+	public enum SceneName
+	{
+		Start = 0,
+		Level
+	}
 }
+
