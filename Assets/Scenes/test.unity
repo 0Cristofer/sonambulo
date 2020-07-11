@@ -412,11 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf2db55f646bb148ae0850503d0f2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 60
-  moveSpeed: 4.5
-  objectsLayer:
-    serializedVersion: 2
-    m_Bits: 256
+  Distance: 100
+  MoveSpeed: 5
   PlayerRigidBody: {fileID: 524176887}
 --- !u!54 &524176887
 Rigidbody:

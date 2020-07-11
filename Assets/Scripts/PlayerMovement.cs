@@ -1,34 +1,27 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private bool collided = false;
-    
     [SerializeField] 
-    private float distance;
-
+    private float Distance;
     [SerializeField]
-    private float moveSpeed;
+    private float MoveSpeed;
 
-    private Vector3 moveDirection;
-    public LayerMask objectsLayer;
+    private bool Collided = false;
+    private Vector3 MoveDirection;
     
     [SerializeField]
     private Rigidbody PlayerRigidBody;
     
-    // Start is called before the first frame update
     private void Start()
     {
-        moveDirection = Vector3.forward;
+        MoveDirection = Vector3.forward;
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (transform.position.z > distance || collided) return;
+        if (transform.position.z > Distance || Collided) 
+            return;
         
         if (Input.GetKeyDown(KeyCode.L))
         {
@@ -40,48 +33,48 @@ public class PlayerMovement : MonoBehaviour
             RotateRight();
         }
 
-        PlayerRigidBody.velocity = moveDirection.normalized * moveSpeed;
+        PlayerRigidBody.velocity = MoveDirection.normalized * MoveSpeed;
     }
 
     private void RotateLeft()
     {
-        if (moveDirection.z == 1) // if moving forward
+        if (MoveDirection.z == 1) // if moving forward
         {
-            moveDirection = new Vector3(-1, 0, 0);
+            MoveDirection = new Vector3(-1, 0, 0);
         }
-        else if(moveDirection.x == -1) // if moving to the left
+        else if (MoveDirection.x == -1) // if moving to the left
         {
-            moveDirection = new Vector3(0, 0, -1);
+            MoveDirection = new Vector3(0, 0, -1);
             
-        } else if (moveDirection.z == -1) //if moving backwards 
+        } else if (MoveDirection.z == -1) //if moving backwards 
         {
-            moveDirection = new Vector3(1, 0,0);   
+            MoveDirection = new Vector3(1, 0,0);   
         }
         else // if moving to the right 
         {
-            moveDirection = new Vector3(0, 0, 1);
+            MoveDirection = new Vector3(0, 0, 1);
         }
+        
         PlayerRigidBody.transform.Rotate(0, 90, 0);   
     }
     
     private void RotateRight()
     {
-        if (moveDirection.z == 1) // if moving forward
+        if (MoveDirection.z == 1) // if moving forward
         {
-            moveDirection = new Vector3(1, 0, 0);
-            //PlayerRigidBody.transform.localEulerAngles = new Vector3();
+            MoveDirection = new Vector3(1, 0, 0);
         }
-        else if(moveDirection.x == 1) // if moving to the left
+        else if(MoveDirection.x == 1) // if moving to the left
         {
-            moveDirection = new Vector3(0, 0, -1);
+            MoveDirection = new Vector3(0, 0, -1);
             
-        } else if (moveDirection.z == -1) //if moving backwards 
+        } else if (MoveDirection.z == -1) //if moving backwards 
         {
-            moveDirection = new Vector3(-1, 0,0);   
+            MoveDirection = new Vector3(-1, 0,0);   
         }
         else // if moving to the right 
         {
-            moveDirection = new Vector3(0, 0, 1);
+            MoveDirection = new Vector3(0, 0, 1);
         }
         
     }
@@ -90,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            collided = true;
+            Collided = true;
         }
     }
 }
