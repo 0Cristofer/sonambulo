@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Application : MonoBehaviour
 {
-	public static Application App { get; set; }
+	public static Application App { get; private set; }
 
 	private void Awake()
 	{

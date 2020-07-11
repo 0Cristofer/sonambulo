@@ -1,11 +1,10 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StartSceneController : MonoBehaviour
 {
 	[SerializeField]
-	private Button StartButton;
+	private Button StartButton = null;
 
 	private void Awake()
 	{
