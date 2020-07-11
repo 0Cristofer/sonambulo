@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 33436111493266676}
   - component: {fileID: 23259631148694672}
   - component: {fileID: 65474367052050146}
+  - component: {fileID: 802944870}
   m_Layer: 0
   m_Name: SwitchBase
   m_TagString: Untagged
@@ -173,6 +174,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.462246, y: 1.2051207, z: 0.7127571}
   m_Center: {x: 0.00000047683716, y: 0.60256034, z: -0.35637856}
+--- !u!114 &802944870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526962827944366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ef73741e4394e428cc931404ea5ecf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialState: 1
+  Pivot: {fileID: 5705445630390217207}
 --- !u!1 &5705445630390217207
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,11 +211,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5705445630390217207}
-  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: -0.488}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4171638280053166}
   m_Father: {fileID: 4239122183019148}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 60}

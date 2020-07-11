@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 190404808561741173}
   - component: {fileID: 5507341691803535603}
+  - component: {fileID: 222071863}
   m_Layer: 0
   m_Name: bridge
   m_TagString: Untagged
@@ -45,8 +46,22 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.043806, y: 0.0696857, z: 2.1642342}
+  m_Center: {x: 0.032211304, y: -0.0034097433, z: -0.09734678}
+--- !u!114 &222071863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124976988831919797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4175955b734b2f9216bb7d899edb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialState: 0
+  LeverController: {fileID: 0}
 --- !u!1001 &420663833444553027
 PrefabInstance:
   m_ObjectHideFlags: 0
