@@ -3,13 +3,13 @@
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody EnemyRigidbody;
+    private Rigidbody EnemyRigidbody = null;
 
     [SerializeField]
-    private float moveSpeed;
+    private float MoveSpeed = 0f;
     
     private void Update()
     {
-        EnemyRigidbody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized * moveSpeed;
+        EnemyRigidbody.velocity = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized * MoveSpeed;
     }
 }

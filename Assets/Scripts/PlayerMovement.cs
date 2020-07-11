@@ -3,15 +3,15 @@
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] 
-    private float Distance;
+    private float Distance = 0;
     [SerializeField]
-    private float MoveSpeed;
+    private float MoveSpeed = 0;
 
     private bool Collided = false;
     private Vector3 MoveDirection;
     
     [SerializeField]
-    private Rigidbody PlayerRigidBody;
+    private Rigidbody PlayerRigidBody = null;
     
     private void Start()
     {
