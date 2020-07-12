@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour
     public void NextLevel()
     {
         string currentLevel = SceneManager.GetActiveScene().name;
-        int levelNumber = Convert.ToInt32(currentLevel.Substring(currentLevel.Length)) + 1;
+        int levelNumber = int.Parse(currentLevel.Substring(currentLevel.Length - 1)) + 1;
         Application.App.ChangeSceneTo(Application.SceneName.Level, levelNumber);
     }
 }
