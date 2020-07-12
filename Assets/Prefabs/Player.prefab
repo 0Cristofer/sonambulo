@@ -27,10 +27,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8219532065076008672}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.6, y: 1, z: -2.2}
+  m_LocalPosition: {x: -2.6, y: 1.07, z: -2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6138848592905370669}
+  - {fileID: 6387724186770296931}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -65,8 +66,8 @@ MonoBehaviour:
   MoveSpeed: 1
   PlayerRigidBody: {fileID: 8219532065076008667}
   InitialDirection: {x: 0, y: 0, z: 1}
-  WinCanvas: {fileID: 0}
-  LoseCanvas: {fileID: 0}
+  WinCanvas: {fileID: 6387724185208786012}
+  LoseCanvas: {fileID: 6387724186278299927}
 --- !u!54 &8219532065076008667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -83,6 +84,93 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!1001 &5681911003023581997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8219532065076008668}
+    m_Modifications:
+    - target: {fileID: 1621281271135597389, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3707de2effc821f41a5cd8fe8ffb36d0, type: 3}
+--- !u!4 &6387724186770296931 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1621281271135597390, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5681911003023581997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &6387724185208786012 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1621281269441638257, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5681911003023581997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &6387724186278299927 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1621281270527994426, guid: 3707de2effc821f41a5cd8fe8ffb36d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5681911003023581997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5961406052627553222
 PrefabInstance:
   m_ObjectHideFlags: 0

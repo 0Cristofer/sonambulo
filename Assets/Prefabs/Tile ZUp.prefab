@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7618263490144369253}
   - component: {fileID: 7621199536724681909}
   - component: {fileID: 7630754507190898629}
-  - component: {fileID: 2097424150785097012}
   - component: {fileID: 7122362839205803757}
   - component: {fileID: 2645937607776651402}
+  - component: {fileID: 2097424150785097012}
+  - component: {fileID: 7968559630168761927}
   m_Layer: 8
   m_Name: Tile ZUp
   m_TagString: Untagged
@@ -83,19 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2097424150785097012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616383077477340141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.000001, y: 0.099999994, z: 4.000001}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7122362839205803757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +110,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectType: 2
+--- !u!65 &2097424150785097012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7616383077477340141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.990283, y: 0.099999994, z: 0.36368328}
+  m_Center: {x: 0.0029022521, y: 0, z: 0.021544507}
+--- !u!65 &7968559630168761927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7616383077477340141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3064882, y: 0.099999994, z: 4.0355206}
+  m_Center: {x: 0.008024328, y: 0, z: 0.01775996}
 --- !u!1001 &3967886233040771005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,7 +151,7 @@ PrefabInstance:
     - target: {fileID: 2822568042350270558, guid: 1ad6c93c7cba42b47b356a7e128acfe0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: -0.814
       objectReference: {fileID: 0}
     - target: {fileID: 2822568042350270558, guid: 1ad6c93c7cba42b47b356a7e128acfe0,
         type: 3}
@@ -147,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 2822568042350270558, guid: 1ad6c93c7cba42b47b356a7e128acfe0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2822568042350270558, guid: 1ad6c93c7cba42b47b356a7e128acfe0,
         type: 3}

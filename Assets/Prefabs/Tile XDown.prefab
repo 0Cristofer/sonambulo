@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7618263490144369253}
   - component: {fileID: 7621199536724681909}
   - component: {fileID: 7630754507190898629}
-  - component: {fileID: 2097424150785097012}
   - component: {fileID: 7122362839205803757}
   - component: {fileID: 581991983925317913}
+  - component: {fileID: 4112021659916758654}
+  - component: {fileID: 2097424150785097012}
   m_Layer: 8
   m_Name: Tile XDown
   m_TagString: Untagged
@@ -83,19 +84,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2097424150785097012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616383077477340141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.000001, y: 0.099999994, z: 4.000001}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7122362839205803757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +110,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectType: 5
+--- !u!65 &4112021659916758654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7616383077477340141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0021873, y: 0.099999994, z: 0.27286637}
+  m_Center: {x: 0.0010960771, y: 0, z: -0.026242988}
+--- !u!65 &2097424150785097012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7616383077477340141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32312503, y: 0.099999994, z: 3.9870124}
+  m_Center: {x: 0.0067396658, y: 0, z: 0.009356765}
 --- !u!1001 &1441341460277263405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,7 +213,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8486481531426283510, guid: 1ad6c93c7cba42b47b356a7e128acfe0, type: 3}
+    - {fileID: 8414973140211404958, guid: 1ad6c93c7cba42b47b356a7e128acfe0, type: 3}
+    - {fileID: 4833627034238668870, guid: 1ad6c93c7cba42b47b356a7e128acfe0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ad6c93c7cba42b47b356a7e128acfe0, type: 3}
 --- !u!4 &3687158118123709555 stripped
 Transform:
