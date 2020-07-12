@@ -10,7 +10,10 @@ public class Application : MonoBehaviour
 	private void Awake()
 	{
 		if (FindObjectsOfType<Application>().Length > 1)
+		{
 			Destroy(gameObject);
+			return;
+		}
 		
 		DontDestroyOnLoad(this);
 		App = this;
@@ -40,13 +43,16 @@ public class Application : MonoBehaviour
 		//todo: mostrar overlay de "ganhou" com textinho pra apertar qualquer tecla pra prosseguir pro próximo level
 
 		FinishedLevel = true;
+		Debug.Log(FinishedLevel);
 	}
 
 	private void LateUpdate()
 	{
-		if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		if (Input.GetKeyDown(KeyCode.R)) 
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
-		if (FinishedLevel && Input.GetKeyDown(KeyCode.Return)) NextLevel();
+		if (FinishedLevel && Input.GetKeyDown(KeyCode.Return)) 
+			NextLevel();
 	}
 
 	private void NextLevel()
