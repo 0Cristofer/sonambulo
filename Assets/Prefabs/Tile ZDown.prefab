@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7630754507190898629}
   - component: {fileID: 7122362839205803757}
   - component: {fileID: 2842363910069715218}
-  - component: {fileID: 2097424150785097012}
   - component: {fileID: 8852587532323202057}
   m_Layer: 8
   m_Name: Tile ZDown
@@ -110,19 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectType: 3
---- !u!65 &2097424150785097012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616383077477340141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.016555, y: 0.099999994, z: 0.37913984}
-  m_Center: {x: -0.0066840667, y: 0, z: 0.0037342068}
 --- !u!65 &8852587532323202057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -134,8 +120,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3448172, y: 0.099999994, z: 4}
-  m_Center: {x: 0.017502744, y: 0, z: 0}
+  m_Size: {x: 3.5211046, y: 0.099999994, z: 3.5185552}
+  m_Center: {x: -0.016082952, y: 0, z: -0.01034457}
 --- !u!1001 &1124736624905534750
 PrefabInstance:
   m_ObjectHideFlags: 0

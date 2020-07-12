@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7630754507190898629}
   - component: {fileID: 7122362839205803757}
   - component: {fileID: 7345277346291960745}
-  - component: {fileID: 2097424150785097012}
   - component: {fileID: 4084445811743688312}
   m_Layer: 8
   m_Name: Tile XUp
@@ -110,19 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectType: 4
---- !u!65 &2097424150785097012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7616383077477340141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.24482456, y: 0.099999994, z: 3.9938312}
-  m_Center: {x: 0.034531195, y: 0, z: -0.02518036}
 --- !u!65 &4084445811743688312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -134,8 +120,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0330644, y: 0.099999994, z: 0.29983896}
-  m_Center: {x: 0.013533896, y: 0, z: -0.10337008}
+  m_Size: {x: 3.3995805, y: 0.099999994, z: 3.3162775}
+  m_Center: {x: 0.07459892, y: 0, z: 0.010735886}
 --- !u!1001 &1495478793844304147
 PrefabInstance:
   m_ObjectHideFlags: 0
