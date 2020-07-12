@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1592925619385712, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
       propertyPath: m_TagString
-      value: Hazard
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4144914136312056, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -160,12 +160,12 @@ PrefabInstance:
     - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
         type: 3}
       propertyPath: m_Size.z
-      value: 3.0691006
+      value: 4.0655446
       objectReference: {fileID: 0}
     - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.14516342
+      value: -0.020498395
       objectReference: {fileID: 0}
     - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
         type: 3}
@@ -175,14 +175,15 @@ PrefabInstance:
     - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
         type: 3}
       propertyPath: m_Center.z
-      value: -0.006365299
+      value: 0.009369612
       objectReference: {fileID: 0}
     - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
         type: 3}
       propertyPath: m_Size.x
-      value: 3.1490588
+      value: 4.1484785
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
 --- !u!4 &5485482408205709816 stripped
 Transform:
