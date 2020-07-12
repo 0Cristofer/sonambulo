@@ -1,29 +1,40 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class followMouse : MonoBehaviour
+public class FollowMouse : MonoBehaviour
 {
     [SerializeField]
     private Camera MainCamera;
 
     [SerializeField]
-    private float Distance;
+    private LayerMask WallLayerMask;
+    
+    [SerializeField]
+    private Vector3 WorldPosition;
 
     [SerializeField]
-    private Vector3 MousePosition;
-
+    private float SmoothTime = 0.2f;
+    
     [SerializeField]
-    private float UnicornSize;
-
+    private float SmoothGetOutTime = 0.01f;
+    
     [SerializeField]
-    private bool UseMouseYtoSetUnicornSize;
+    private Vector3 Velocity = Vector3.zero;
     
     void LateUpdate()
     {
-        MousePosition = Input.mousePosition;
-        MousePosition.z = UseMouseYtoSetUnicornSize ? MousePosition.y / UnicornSize : Distance;
-        transform.position = MainCamera.ScreenToWorldPoint(MousePosition);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hitData;
+
+        if (Physics.Raycast(ray, out hitData, 100000, ~WallLayerMask))
+        {
+            WorldPosition = hitData.point;
+            transform.position = Vector3.SmoothDamp(transform.position, new Vector3(WorldPosition.x, WorldPosition.y + 1.5f, WorldPosition.z),  ref Velocity, SmoothTime);
+        }
+        
     }
+
 }
