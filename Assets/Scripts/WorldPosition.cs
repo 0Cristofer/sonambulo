@@ -2,24 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class WorldPosition : MonoBehaviour
 {
     [SerializeField]
     private Camera MainCamera;
     
     [SerializeField]
-    private Vector3 WorldPosition;
+    private Vector3 MouseWorldPosition;
 
     [SerializeField]
     private LayerMask FloorLayerMask;
+
+    [SerializeField]
+    private GameObject prefabCube;
     
     void Update()
     {
-        Ray ray = MainCamera.ScreenPointToRay(Input.mousePosition);
-        
-        if (Physics.Raycast(ray, out var hitData, 100000, FloorLayerMask))
+        if (Input.GetMouseButtonDown(0))
         {
-            WorldPosition = hitData.point;
+            Ray ray = MainCamera.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out var hitData, 100000, FloorLayerMask))
+            {
+                MouseWorldPosition = hitData.point;
+            }
+            Instantiate(prefabCube, MouseWorldPosition, Quaternion.identity);
         }
     }
 }
