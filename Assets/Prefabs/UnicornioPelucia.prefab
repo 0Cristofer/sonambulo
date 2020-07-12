@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 5749640904245876134}
   - component: {fileID: 8675349490400401923}
   - component: {fileID: 6882062270843481801}
+  - component: {fileID: 1209777672267903538}
+  - component: {fileID: 4925577806164558992}
+  - component: {fileID: 3147074167124649502}
   m_Layer: 0
   m_Name: UnicornioPelucia
   m_TagString: Untagged
@@ -84,3 +87,58 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1209777672267903538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936230360667246364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40c1892bb89f4b44a99d4b37527fffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
+  MouseWorldPosition: {x: 0, y: 0, z: 0}
+  FloorLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  prefabCube: {fileID: 0}
+--- !u!114 &4925577806164558992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936230360667246364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af104a7c67e477e4a8fafa5810e32bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
+  SelectedObject: {fileID: 0}
+  HighlightedObject: {fileID: 0}
+  SelectableLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &3147074167124649502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936230360667246364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7704a71e4346eee4d9e088d2307e9cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
+  WallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  WorldPosition: {x: 0, y: 0, z: 0}
+  SmoothTime: 0.2
+  Velocity: {x: 0, y: 0, z: 0}

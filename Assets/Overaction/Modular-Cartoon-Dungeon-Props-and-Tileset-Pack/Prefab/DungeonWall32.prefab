@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33948190594817274}
   - component: {fileID: 23182580896075880}
   - component: {fileID: 65120482979079206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonWall32
   m_TagString: Bounceable
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006252107781748}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.34, y: -0.016172409, z: -12.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
