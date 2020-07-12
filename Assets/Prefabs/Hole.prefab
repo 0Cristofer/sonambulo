@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 98667006}
   m_Layer: 0
   m_Name: void
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1592925619385712, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
       propertyPath: m_Name
-      value: Dungeon_hole
+      value: Hole
+      objectReference: {fileID: 0}
+    - target: {fileID: 1592925619385712, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
+      propertyPath: m_TagString
+      value: Hazard
       objectReference: {fileID: 0}
     - target: {fileID: 4144914136312056, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -152,6 +156,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 3.0691006
+      objectReference: {fileID: 0}
+    - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.14516342
+      objectReference: {fileID: 0}
+    - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.009611696
+      objectReference: {fileID: 0}
+    - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.006365299
+      objectReference: {fileID: 0}
+    - target: {fileID: 65799833408262976, guid: 428fbbc744266cd41aaf49035844d41d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.1490588
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 428fbbc744266cd41aaf49035844d41d, type: 3}
