@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Serialization;
+﻿using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
@@ -19,22 +15,17 @@ public class FollowMouse : MonoBehaviour
     private float SmoothTime = 0.2f;
     
     [SerializeField]
-    private float SmoothGetOutTime = 0.01f;
-    
-    [SerializeField]
     private Vector3 Velocity = Vector3.zero;
     
-    void LateUpdate()
+    private void LateUpdate()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hitData;
+        Ray ray = MainCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hitData, 100000, ~WallLayerMask))
+        if (Physics.Raycast(ray, out var hitData, 100000, ~WallLayerMask))
         {
             WorldPosition = hitData.point;
             transform.position = Vector3.SmoothDamp(transform.position, new Vector3(WorldPosition.x, WorldPosition.y + 1.5f, WorldPosition.z),  ref Velocity, SmoothTime);
         }
-        
+      
     }
-
 }
