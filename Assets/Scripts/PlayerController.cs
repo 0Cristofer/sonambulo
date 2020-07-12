@@ -13,6 +13,10 @@ public class PlayerController : MonoBehaviour
     private Rigidbody PlayerRigidBody = null;
     [SerializeField]
     private Vector3 InitialDirection = Vector3.zero;
+    [SerializeField]
+    private Canvas WinCanvas = null;
+    [SerializeField]
+    private Canvas LoseCanvas = null;
 
     private Vector3 MoveDirection;
     private bool Collided = false;
@@ -39,12 +43,14 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Hazard") || other.gameObject.CompareTag("Bounceable") || other.gameObject.CompareTag("Bounceable"))
         {
             Collided = true;
+            LoseCanvas.gameObject.SetActive(true);
         }
 
         if (other.gameObject.CompareTag("Bed"))
         {
             gameObject.SetActive(false);
             LevelManager.WinLevel();
+            WinCanvas.gameObject.SetActive(true);
         }
     }
 
