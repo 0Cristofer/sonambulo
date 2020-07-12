@@ -27,10 +27,14 @@ public abstract class EnemyMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!other.gameObject.CompareTag("Bounceable"))
-            return;
-        
-        ChangeDirection();
+        if (other.gameObject.CompareTag("Bounceable"))
+            ChangeDirection();   
+        else if (other.gameObject.CompareTag("Hazard"))
+        {
+            Die();
+        }
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -79,6 +83,12 @@ public abstract class EnemyMovement : MonoBehaviour
     {
         Direction = Direction == MovementDirection.Forward ? MovementDirection.Backwards : MovementDirection.Forward;
         OnDirectionChanged();
+    }
+
+    private void Die()
+    {
+        // animação rato morrendo?
+        Destroy(this.gameObject);
     }
 
     protected abstract void OnDirectionChanged();
