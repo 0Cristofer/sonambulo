@@ -3,13 +3,13 @@
 public class FollowMouse : MonoBehaviour
 {
     [SerializeField]
-    private Camera MainCamera;
+    private Camera MainCamera = null;
 
     [SerializeField]
     private LayerMask WallLayerMask;
     
     [SerializeField]
-    private Vector3 WorldPosition;
+    private Vector3 WorldPosition = Vector3.zero;
 
     [SerializeField]
     private float SmoothTime = 0.2f;

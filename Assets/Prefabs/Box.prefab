@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33285826248548364}
   - component: {fileID: 23177852343558548}
   - component: {fileID: 65195530408464508}
+  - component: {fileID: 1718229226}
   m_Layer: 0
   m_Name: Box
   m_TagString: Bounceable
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727798833912166}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.720012, y: 0.07700062, z: 11.119995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -94,6 +95,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.355299, y: 1.355299, z: 1.355299}
   m_Center: {x: 0, y: 0.58429337, z: 0}
+--- !u!114 &1718229226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727798833912166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4328d38370124023aab48f3b30d95b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectType: 1
 --- !u!1 &1848634774176450
 GameObject:
   m_ObjectHideFlags: 0

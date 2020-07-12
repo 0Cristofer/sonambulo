@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Unicornio : MonoBehaviour, IOnObjectClicked
+public class Unicornio : MonoBehaviour, IOnObjectClicked, IOnFloorClicked
 {
 	[SerializeField]
 	private SelectOnClick SelectOnClick = null;
@@ -10,6 +10,8 @@ public class Unicornio : MonoBehaviour, IOnObjectClicked
 	private void Awake()
 	{
 		SelectOnClick.SetObjectClickedListener(this);
+		SelectOnClick.SetOnFloorClickedListener(this);
+		SelectOnClick.SetClickObject(true);
 	}
 
 	private void Start()
@@ -21,9 +23,10 @@ public class Unicornio : MonoBehaviour, IOnObjectClicked
 	{
 		if (SelectedObject != null)
 			return;
-        
-		SelectedObject.gameObject.SetActive(false);
+
 		SelectedObject = objectType;
+		SelectedObject.gameObject.SetActive(false);
+		SelectOnClick.SetClickObject(false);
 	}
 
 	public void OnFloorClicked(Vector3 position)
@@ -34,5 +37,6 @@ public class Unicornio : MonoBehaviour, IOnObjectClicked
 		SelectedObject.gameObject.GetComponent<Transform>().position = position;
 		SelectedObject.gameObject.SetActive(true);
 		SelectedObject = null;
+		SelectOnClick.SetClickObject(true);
 	}
 }
