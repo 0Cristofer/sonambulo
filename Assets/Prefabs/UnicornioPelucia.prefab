@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8675349490400401923}
   - component: {fileID: 6882062270843481801}
   - component: {fileID: 4925577806164558992}
-  - component: {fileID: 3147074167124649502}
   - component: {fileID: 136340732}
+  - component: {fileID: -192936456897761290}
   m_Layer: 0
   m_Name: UnicornioPelucia
   m_TagString: Untagged
@@ -104,7 +104,20 @@ MonoBehaviour:
   FloorLayerMask:
     serializedVersion: 2
     m_Bits: 256
---- !u!114 &3147074167124649502
+--- !u!114 &136340732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4936230360667246364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548aa094a4f444a3b94c186a468ec488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectOnClick: {fileID: 4925577806164558992}
+--- !u!114 &-192936456897761290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,16 +136,3 @@ MonoBehaviour:
   WorldPosition: {x: 0, y: 0, z: 0}
   SmoothTime: 0.2
   Velocity: {x: 0, y: 0, z: 0}
---- !u!114 &136340732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4936230360667246364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 548aa094a4f444a3b94c186a468ec488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SelectOnClick: {fileID: 4925577806164558992}
