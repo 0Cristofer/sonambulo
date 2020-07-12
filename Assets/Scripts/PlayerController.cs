@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody PlayerRigidBody = null;
     [SerializeField]
     private Vector3 InitialDirection = Vector3.zero;
-    
+
     private Vector3 MoveDirection;
     private bool Collided = false;
 
