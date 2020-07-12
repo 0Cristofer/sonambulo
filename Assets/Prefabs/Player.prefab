@@ -108,6 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdf2db55f646bb148ae0850503d0f2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _LevelManager: {fileID: 7982623184672754540, guid: f30ef2336e4e17a49984a0ceaf58427a,
+    type: 3}
   MoveSpeed: 1
   PlayerRigidBody: {fileID: 8219532065076008667}
   InitialDirection: {x: 0, y: 0, z: 1}
