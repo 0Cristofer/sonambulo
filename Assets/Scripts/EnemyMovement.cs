@@ -7,11 +7,11 @@ public abstract class EnemyMovement : MonoBehaviour
     [SerializeField]
     private float MoveSpeed = 0f;
     [SerializeField]
-    private Vector3 ForwardDirection;
+    private Vector3 ForwardDirection = Vector3.zero;
     [SerializeField]
-    protected Vector3 BackwardsDirection;
+    protected Vector3 BackwardsDirection = Vector3.zero;
     [SerializeField]
-    private MovementDirection InitialDirection;
+    private MovementDirection InitialDirection = MovementDirection.Forward;
 
     protected MovementDirection Direction { get; private set; }
 
