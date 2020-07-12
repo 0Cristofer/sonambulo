@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] 
-    private LevelManager _LevelManager = null;
-    private LevelManager LevelManager => _LevelManager;
-    
     [SerializeField]
     private float MoveSpeed = 0;
     [SerializeField]
@@ -49,7 +45,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Bed"))
         {
             gameObject.SetActive(false);
-            LevelManager.WinLevel();
+            Application.App.WinLevel();
             WinCanvas.gameObject.SetActive(true);
         }
     }
