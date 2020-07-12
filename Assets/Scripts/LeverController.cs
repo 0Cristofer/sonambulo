@@ -44,10 +44,7 @@ public class LeverController : MonoBehaviour
 		Sequence seq = DOTween.Sequence();
 		float rotation = PivotTransform.localEulerAngles.z + (CurrentState == LeverState.Off ? -120f : 120f);
 
-		seq.AppendCallback(() =>
-		{
-			Animating = true;
-		});
+		Animating = true;
 		seq.Append(PivotTransform.DOLocalRotate(new Vector3(0, 0, rotation), 0.15f));
 		seq.OnComplete(() => onComplete?.Invoke());
 		seq.AppendCallback(() =>
