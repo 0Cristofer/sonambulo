@@ -24,15 +24,19 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
-        if (Collided) 
+        if (Collided)
+        {
+            // perder
+            Debug.Log("PERDEU");
             return;
-        
+        }
+
         PlayerRigidBody.velocity = MoveDirection.normalized * MoveSpeed;
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Hazard") || other.gameObject.CompareTag("Bounceable") || other.gameObject.CompareTag("Bounceable"))
         {
             Collided = true;
         }
