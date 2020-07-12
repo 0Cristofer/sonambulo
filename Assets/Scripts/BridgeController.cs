@@ -14,6 +14,10 @@ public class BridgeController : MonoBehaviour, ILeverListener
 	private void Awake()
 	{
 		Transform = gameObject.GetComponent<Transform>();
+	}
+
+	private void Start()
+	{
 		LeverController.AddLeverListener(this);
 		SetInitialValues();
 	}

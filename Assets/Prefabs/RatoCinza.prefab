@@ -110,7 +110,6 @@ MonoBehaviour:
   EnemyRigidbody: {fileID: 502901004}
   MoveSpeed: 4
   ForwardDirection: {x: 1, y: 0, z: 0}
-  BackwardsDirection: {x: -1, y: 0, z: 0}
   InitialDirection: 0
 --- !u!54 &502901004
 Rigidbody:
