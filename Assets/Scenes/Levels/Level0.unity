@@ -2483,6 +2483,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1262034586034140535, guid: 0435e22befd1dc44899c510ff504354a,
+        type: 3}
+      propertyPath: LeverController
+      value: 
+      objectReference: {fileID: 802944871}
     - target: {fileID: 5485482408205709816, guid: 0435e22befd1dc44899c510ff504354a,
         type: 3}
       propertyPath: m_LocalPosition.x
