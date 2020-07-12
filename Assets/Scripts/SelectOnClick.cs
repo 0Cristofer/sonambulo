@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SelectOnClick : MonoBehaviour
 {
@@ -20,6 +18,13 @@ public class SelectOnClick : MonoBehaviour
 
     private RaycastHit HitData;
     
+    private IOnObjectClicked Listener { get; set; }
+
+    public void SetObjectClickedListener(IOnObjectClicked listener)
+    {
+        Listener = listener;
+    }
+    
     private void Update()
     {
         Ray = MainCamera.ScreenPointToRay(Input.mousePosition);
@@ -31,8 +36,13 @@ public class SelectOnClick : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 SelectedObject = HitData.transform.gameObject;
+                ClickableObject obj = SelectedObject.GetComponent<ClickableObject>();
+
+                if (obj != null)
+                {
+                    Listener?.OnObjectClicked(obj);
+                }
             }
-            
         }
         else
         {
@@ -42,7 +52,11 @@ public class SelectOnClick : MonoBehaviour
             {
                 SelectedObject = null;
             }
-            
         }
     }
+}
+
+public interface IOnObjectClicked
+{
+    void OnObjectClicked(ClickableObject clickableObject);
 }
