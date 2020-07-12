@@ -10,6 +10,8 @@ public class HazardController : MonoBehaviour, ILeverListener
 
 	private void Start()
 	{
+		if (LeverController == null) return;
+		
 		LeverController.AddLeverListener(this);
 	}
 
